@@ -14,3 +14,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 4. Ref <https://www.npmjs.com/package/mat-table-filter>
 5. Run ```ng add @angular/material```
 6. Ref <https://material.angular.io/guide/getting-started>
+
+### Task: Add the Material Components to app.module
+
+```TypeScript
+// app.module
+...
+  imports: [
+    BrowserModule,
+    MatTableModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+    MatPaginatorModule,
+    MatTableFilterModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCheckboxModule,
+    FormsModule
+  ],
+  ...
+  ```

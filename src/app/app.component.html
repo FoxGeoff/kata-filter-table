@@ -9,18 +9,21 @@
   [dataSource]="dataSource"
   class="mat-elevation-z8"
 >
+  <!-- Name column  -->
   <ng-container matColumnDef="name">
     <mat-header-cell *matHeaderCellDef>
       <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
         <input matInput placeholder="Name" [(ngModel)]="filterEntity.name" />
       </mat-form-field>
     </mat-header-cell>
     <mat-cell *matCellDef="let element"> {{ element.name }} </mat-cell>
   </ng-container>
-
+  <!-- Captain Name column  -->
   <ng-container matColumnDef="captainName">
     <mat-header-cell *matHeaderCellDef>
       <mat-form-field appearance="outline">
+        <mat-label>Captain's Name</mat-label>
         <input
           matInput
           placeholder="Captain Name"
@@ -30,10 +33,11 @@
     </mat-header-cell>
     <mat-cell *matCellDef="let element"> {{ element.captain.name }} </mat-cell>
   </ng-container>
-
+  <!-- Captain Surname column  -->
   <ng-container matColumnDef="captainSurname">
     <mat-header-cell *matHeaderCellDef>
       <mat-form-field appearance="outline">
+        <mat-label>Captain's Surname</mat-label>
         <input
           matInput
           placeholder="Captain Surname"
@@ -45,7 +49,7 @@
       {{ element.captain.surname }}
     </mat-cell>
   </ng-container>
-
+  <!-- Constitution Class column  -->
   <ng-container matColumnDef="isConstitutionClass">
     <mat-header-cell *matHeaderCellDef>
       <mat-checkbox
@@ -59,6 +63,9 @@
     </mat-cell>
   </ng-container>
 
-  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-header-row
+    *matHeaderRowDef="displayedColumns"
+    color="primary"
+  ></mat-header-row>
   <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
 </mat-table>

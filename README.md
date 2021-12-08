@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Project introduction
 
 1. Code ref <https://stackblitz.com/github/HalitTalha/mat-table-filter-example?file=package.json>
+2. Code ref <https://code-maze.com/angular-material-table/>
 
 ### Task: Add npm libraries
 
